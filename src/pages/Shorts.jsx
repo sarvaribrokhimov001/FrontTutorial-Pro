@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import '../styles/Shorts.css';
+import ThemeToggle from '../components/ThemeToggle';
 
-const Shorts = () => {
+const Shorts = ({ darkMode, setDarkMode }) => {
   const [search, setSearch] = useState("");
 
   const shortsList = [
@@ -135,8 +136,15 @@ const Shorts = () => {
   return (
     <div>
       <h1 className='Shorts__title HTML__title'> Frontend Shortcuts & Terms </h1>
-      <input className='Shorts__input HTML__input' type="search" placeholder='Search abbreviation or full form' value={search}
+      <div className="search__wrapper">
+        <input className='Shorts__input HTML__input' type="search" placeholder='Search abbreviation or full form' value={search}
         onChange={(e) => setSearch(e.target.value)} />
+
+         <ThemeToggle
+    darkMode={darkMode}
+    setDarkMode={setDarkMode}
+  />
+      </div>
 
       <div className='All__shorts'>
         <ul>

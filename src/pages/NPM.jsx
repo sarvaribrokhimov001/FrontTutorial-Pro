@@ -2,8 +2,9 @@ import { useState } from "react";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 import "../styles/NPM.css";
+import ThemeToggle from "../components/ThemeToggle";
 
-const NPM = () => {
+const NPM = ({ darkMode, setDarkMode }) => {
   const [search, setSearch] = useState("");
 
   const npmList = [
@@ -329,13 +330,20 @@ const NPM = () => {
         Useful NPM Packages
       </h1>
 
-      <input
+   <div className="search__wrapper">
+       <input
         className="NPM__input HTML__input"
         type="search"
         placeholder="Search npm package"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
+
+               <ThemeToggle
+    darkMode={darkMode}
+    setDarkMode={setDarkMode}
+  />
+   </div>
 
       <div className="NPM__container">
         {filteredNPM.length > 0 ? (

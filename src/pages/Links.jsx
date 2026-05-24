@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import '../styles/Links.css';
+import ThemeToggle from '../components/ThemeToggle';
 
-const Links = () => {
+const Links = ({ darkMode, setDarkMode }) => {
   const [search, setSearch] = useState("");
 
   const linksList = [
@@ -93,8 +94,15 @@ const Links = () => {
   return (
     <div>
       <h1 className='Links__title HTML__title'> Useful Links </h1>
-      <input className='Links__input HTML__input' type="search" placeholder='Search the Link Name' value={search} 
+      <div className="search__wrapper">
+        <input className='Links__input HTML__input' type="search" placeholder='Search the Link Name' value={search} 
       onChange={(e) => setSearch(e.target.value)} />
+
+                     <ThemeToggle
+    darkMode={darkMode}
+    setDarkMode={setDarkMode}
+  />
+      </div>
 
       <div className='All__links'>
         <ul>

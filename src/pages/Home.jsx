@@ -2,8 +2,9 @@ import { useState } from 'react';
 import '../styles/Home.css';
 // import Footer from '../components/Footer';
 import { Link } from "react-router-dom";
+import ThemeToggle from '../components/ThemeToggle';
 
-const Home = () => {
+const Home = ({ darkMode, setDarkMode }) => {
   const [search, setSearch] = useState("");
 
   const checkMatch = (text) => {
@@ -15,8 +16,15 @@ const Home = () => {
     <div>
       <header>
         <h1 className='home__title'> Welcome to our Website </h1>
-        <input className='home__input' type="search" placeholder='Write your choosing section' value={search}
+        <div className="search__wrapper">
+          <input className='home__input' type="search" placeholder='Write your choosing section' value={search}
           onChange={(e) => setSearch(e.target.value)} />
+
+          <ThemeToggle
+    darkMode={darkMode}
+    setDarkMode={setDarkMode}
+  />
+        </div>
 
         <div className='home__description__container'>
           <h3 className='home__description__title'> Assalomu alaykum hurmatli foydalanuvchilar 😇 </h3>
@@ -55,6 +63,14 @@ const Home = () => {
                 {checkMatch("NPM") && (
                   <li> <Link className='home__section__link' to="/npm"> NPM </Link> </li>
                 )}
+
+                {checkMatch("GIT") && (
+  <li>
+    <Link className='home__section__link' to="/git">
+      GIT
+    </Link>
+  </li>
+)}
 
               </div>
             </div>

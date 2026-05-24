@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import '../styles/HTML.css';
+import ThemeToggle from "../components/ThemeToggle";
 
-const HTML = () => {
+const HTML = ({ darkMode, setDarkMode }) => {
   const [search, setSearch] = useState("");
 
   const tagsList = [
@@ -139,7 +140,22 @@ const HTML = () => {
   return (
     <div>
       <h1 className='HTML__title'> HTML Tags </h1>
-      <input className='HTML__input' type="search" placeholder='Write the Tag Name' value={search} onChange={(e) => setSearch(e.target.value)} />
+      <div className="search__wrapper">
+
+  <input
+    className='HTML__input'
+    type="search"
+    placeholder='Write the Tag Name'
+    value={search}
+    onChange={(e) => setSearch(e.target.value)}
+  />
+
+  <ThemeToggle
+    darkMode={darkMode}
+    setDarkMode={setDarkMode}
+  />
+
+</div>
 
       <div className='HTML__tags'>
         {filteredTags.length > 0 ? (

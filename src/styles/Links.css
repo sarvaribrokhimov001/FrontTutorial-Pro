@@ -16,3 +16,16 @@
 .Links__link:hover {
     color: green;
 }
+
+@media (max-width: 500px) {
+
+  .All__links {
+    padding: 10px;
+  }
+
+  .Links__link {
+    font-size: 15px;
+    word-break: break-word;
+  }
+
+}

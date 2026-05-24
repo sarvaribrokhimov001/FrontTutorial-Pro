@@ -10,3 +10,21 @@
 .shorts__item {
     font-size: 30px;
 }
+
+@media (max-width: 500px) {
+
+  .HTML__tags,
+  .CSS__properties,
+  .All__shorts {
+    padding: 10px;
+  }
+
+  .tags,
+  .property,
+  .shorts__item {
+    font-size: 14px;
+    padding: 10px;
+    line-height: 1.6;
+  }
+
+}

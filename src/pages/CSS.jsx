@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import '../styles/CSS.css';
+import ThemeToggle from '../components/ThemeToggle';
 
-const CSS = () => {
+const CSS = ({ darkMode, setDarkMode }) => {
   const [search, setSearch] = useState("");
 
   const cssList = [
@@ -139,8 +140,15 @@ const CSS = () => {
   return (
     <div>
       <h1 className='CSS__title HTML__title'> CSS Properties </h1>
-      <input className='CSS__input HTML__input' type="search" placeholder='Write the CSS Property' value={search} 
+      <div className="search__wrapper">
+        <input className='CSS__input HTML__input' type="search" placeholder='Write the CSS Property' value={search} 
       onChange={(e) => setSearch(e.target.value)} />
+
+                      <ThemeToggle
+    darkMode={darkMode}
+    setDarkMode={setDarkMode}
+  />
+      </div>
 
       <div className='CSS__properties HTML__tags'>
         {filteredCSS.length > 0 ? (

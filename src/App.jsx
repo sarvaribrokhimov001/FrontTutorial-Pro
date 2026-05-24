@@ -12,6 +12,7 @@ import Shorts from "./pages/Shorts";
 import "../src/App.css";
 import Footer from "./components/Footer";
 import NPM from "./pages/NPM";
+import Git from "./pages/Git";
 
 const PrivateRoute = ({ isLogged, children }) => {
   if (!isLogged) {
@@ -56,6 +57,7 @@ const LoginForm = ({ handleSubmit }) => {
 
 const App = () => {
   const [isLogged, setIsLogged] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const navigate = useNavigate();
 
   function showToast(message, color = "black", duration = 2000) {
@@ -133,15 +135,35 @@ const App = () => {
     }, 2500);
   };
 
+  useEffect(() => {
+  if (darkMode) {
+    document.body.classList.add("dark");
+    document.body.classList.remove("light");
+  } else {
+    document.body.classList.add("light");
+    document.body.classList.remove("dark");
+  }
+}, [darkMode]);
+
   return (
     <Routes>
       <Route path="/" element={!isLogged ? <LoginForm handleSubmit={handleSubmit} /> : <Navigate to="/home" />} />
-      <Route path="/home" element={ <PrivateRoute isLogged={isLogged}> <Navbar /> <Home /> <Footer/> </PrivateRoute> } />
-      <Route path="/html" element={ <PrivateRoute isLogged={isLogged}> <Navbar /> <HTML /> <Footer/> </PrivateRoute> } />
-      <Route path="/css" element={ <PrivateRoute isLogged={isLogged}> <Navbar /> <CSS /> <Footer/> </PrivateRoute> } />
-      <Route path="/links" element={ <PrivateRoute isLogged={isLogged}> <Navbar /> <Links /> <Footer/> </PrivateRoute> } />
-      <Route path="/shorts" element={ <PrivateRoute isLogged={isLogged}> <Navbar /> <Shorts /> <Footer/> </PrivateRoute> } />
-      <Route path="/npm" element={ <PrivateRoute isLogged={isLogged}> <Navbar /> <NPM /> <Footer /> </PrivateRoute> } />
+      <Route path="/home" element={ <PrivateRoute isLogged={isLogged}> <Navbar /> <Home darkMode={darkMode} setDarkMode={setDarkMode} /> <Footer/> </PrivateRoute> } />
+      <Route path="/html" element={ <PrivateRoute isLogged={isLogged}> <Navbar /> <HTML darkMode={darkMode} setDarkMode={setDarkMode} /> <Footer/> </PrivateRoute> } />
+      <Route path="/css" element={ <PrivateRoute isLogged={isLogged}> <Navbar /> <CSS darkMode={darkMode} setDarkMode={setDarkMode} /> <Footer/> </PrivateRoute> } />
+      <Route path="/links" element={ <PrivateRoute isLogged={isLogged}> <Navbar /> <Links darkMode={darkMode} setDarkMode={setDarkMode} /> <Footer/> </PrivateRoute> } />
+      <Route path="/shorts" element={ <PrivateRoute isLogged={isLogged}> <Navbar /> <Shorts darkMode={darkMode} setDarkMode={setDarkMode} /> <Footer/> </PrivateRoute> } />
+      <Route path="/npm" element={ <PrivateRoute isLogged={isLogged}> <Navbar /> <NPM darkMode={darkMode} setDarkMode={setDarkMode} /> <Footer /> </PrivateRoute> } />
+      <Route
+  path="/git"
+  element={
+    <PrivateRoute isLogged={isLogged}>
+      <Navbar />
+      <Git darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Footer />
+    </PrivateRoute>
+  }
+/>
       <Route path="*" element={<h1 className="error"> Page is not founded </h1>} />
     </Routes>
   );
