@@ -142,52 +142,38 @@ body.light .home__section__link {
     color: black;
 }
 
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-@media (max-width: 500px) {
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
 
-  * {
-    box-sizing: border-box;
-  }
+body {
+  max-width: 100vw;
+}
 
-  body {
-    overflow-x: hidden;
-  }
-
-  h1 {
-    font-size: 24px !important;
-    text-align: center;
-  }
-
-  h2 {
-    font-size: 20px !important;
-  }
-
-  p {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
-  ul {
-    padding: 0;
-  }
-
-  li {
-    list-style: none;
-  }
-
+img,
+video,
+iframe,
+code,
+pre {
+  max-width: 100%;
 }
 
 @media (max-width: 500px) {
 
   .search__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     width: 100%;
+    display: flex;
     align-items: center;
+    gap: 8px;
+    padding: 0 10px;
   }
 
   .HTML__input,
@@ -195,13 +181,24 @@ body.light .home__section__link {
   .Links__input,
   .Shorts__input,
   .NPM__input,
-  .Git__input {
-    width: 100%;
-    font-size: 15px;
+  .Git__input,
+  .home__input {
+    flex: 1;
+    min-width: 0;
+    height: 40px;
+    font-size: 14px;
+    padding: 0 10px;
   }
 
   .theme__btn {
-    width: 100%;
+    width: auto;
+    padding: 8px 10px;
+    font-size: 12px;
+    white-space: nowrap;
   }
+
+  body {
+  overflow-x: hidden;
+}
 
 }

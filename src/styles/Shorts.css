@@ -13,18 +13,20 @@
 
 @media (max-width: 500px) {
 
-  .HTML__tags,
-  .CSS__properties,
+  .Shorts__title {
+    font-size: 24px;
+    text-align: center;
+  }
+
   .All__shorts {
     padding: 10px;
   }
 
-  .tags,
-  .property,
   .shorts__item {
-    font-size: 14px;
+    font-size: 13px;
+    line-height: 1.5;
     padding: 10px;
-    line-height: 1.6;
+    word-break: break-word;
   }
 
 }
