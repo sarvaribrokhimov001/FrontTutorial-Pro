@@ -142,11 +142,11 @@ body.light .home__section__link {
     color: black;
 }
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 html,
 body {
@@ -279,7 +279,6 @@ pre {
 
   .home__section li {
     width: 100%;
-    list-style: none;
   }
 
   .home__section__link {
@@ -413,10 +412,10 @@ pre {
     overflow-x: hidden;
   }
 
-  .All__shorts ul {
+  /* .All__shorts ul {
     padding: 0;
     margin: 0;
-  }
+  } */
 
   .shorts__item {
     width: 100%;
