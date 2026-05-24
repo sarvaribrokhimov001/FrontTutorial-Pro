@@ -63,3 +63,26 @@ body.light .navbar__logo {
   }
 
 }
+
+@media (max-width: 500px) {
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px 0;
+  }
+
+  .navbar li {
+    margin-bottom: 8px;
+    list-style: none;
+  }
+
+  .navbar__link {
+    display: block;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+
+}
