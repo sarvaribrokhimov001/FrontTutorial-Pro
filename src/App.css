@@ -1,20 +1,20 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .error {
-    text-align: center;
-    color: red;
+  text-align: center;
+  color: red;
 }
 
 .index__form {
@@ -33,6 +33,11 @@ a {
   border: 2px solid #ddd;
   border-radius: 8px;
   color: red;
+  font-weight: bold;
+}
+
+.index__input:focus {
+  background-color: black;
 }
 
 .index ::-moz-placeholder {
@@ -50,6 +55,7 @@ a {
   border: none;
   border-radius: 8px;
   font-size: 20px;
+  font-weight: bold;
 }
 
 .index__btn:hover {
