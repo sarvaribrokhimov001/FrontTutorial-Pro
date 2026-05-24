@@ -62,5 +62,9 @@ body.light .navbar__logo {
     font-size: 14px;
   }
 
+  .navbar li {
+    margin-top: 15px;
+  }
+
 }
 
