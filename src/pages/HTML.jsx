@@ -141,21 +141,15 @@ const HTML = ({ darkMode, setDarkMode }) => {
     <div>
       <h1 className='HTML__title'> HTML Tags </h1>
       <div className="search__wrapper">
+        <input
+         className='HTML__input'
+         type="search"
+         placeholder='Write the Tag Name'
+         value={search}
+         onChange={(e) => setSearch(e.target.value)} />
 
-  <input
-    className='HTML__input'
-    type="search"
-    placeholder='Write the Tag Name'
-    value={search}
-    onChange={(e) => setSearch(e.target.value)}
-  />
-
-  <ThemeToggle
-    darkMode={darkMode}
-    setDarkMode={setDarkMode}
-  />
-
-</div>
+        <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+      </div>
 
       <div className='HTML__tags'>
         {filteredTags.length > 0 ? (

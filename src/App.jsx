@@ -21,7 +21,6 @@ const PrivateRoute = ({ isLogged, children }) => {
   return children;
 };
 
-
 const LoginForm = ({ handleSubmit }) => {
   useEffect(() => {
     Toastify({
@@ -106,7 +105,6 @@ const App = () => {
 
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*()\-_=+{}[\]:;"'<>.,?/~]).{8,}$/;
-    // const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*()\-=+{}\[\]:;"'<>.,?/~]).{8,}$/;
     const usernameRegex = /^[a-zA-Z0-9]{5,15}$/;
 
     if (username === "") {
@@ -136,35 +134,26 @@ const App = () => {
   };
 
   useEffect(() => {
-  if (darkMode) {
-    document.body.classList.add("dark");
-    document.body.classList.remove("light");
-  } else {
-    document.body.classList.add("light");
-    document.body.classList.remove("dark");
-  }
-}, [darkMode]);
+    if (darkMode) {
+      document.body.classList.add("dark");
+      document.body.classList.remove("light");
+    } else {
+      document.body.classList.add("light");
+      document.body.classList.remove("dark");
+    }
+  }, [darkMode]);
 
   return (
     <Routes>
       <Route path="/" element={!isLogged ? <LoginForm handleSubmit={handleSubmit} /> : <Navigate to="/home" />} />
-      <Route path="/home" element={ <PrivateRoute isLogged={isLogged}> <Navbar /> <Home darkMode={darkMode} setDarkMode={setDarkMode} /> <Footer/> </PrivateRoute> } />
-      <Route path="/html" element={ <PrivateRoute isLogged={isLogged}> <Navbar /> <HTML darkMode={darkMode} setDarkMode={setDarkMode} /> <Footer/> </PrivateRoute> } />
-      <Route path="/css" element={ <PrivateRoute isLogged={isLogged}> <Navbar /> <CSS darkMode={darkMode} setDarkMode={setDarkMode} /> <Footer/> </PrivateRoute> } />
-      <Route path="/links" element={ <PrivateRoute isLogged={isLogged}> <Navbar /> <Links darkMode={darkMode} setDarkMode={setDarkMode} /> <Footer/> </PrivateRoute> } />
-      <Route path="/shorts" element={ <PrivateRoute isLogged={isLogged}> <Navbar /> <Shorts darkMode={darkMode} setDarkMode={setDarkMode} /> <Footer/> </PrivateRoute> } />
-      <Route path="/npm" element={ <PrivateRoute isLogged={isLogged}> <Navbar /> <NPM darkMode={darkMode} setDarkMode={setDarkMode} /> <Footer /> </PrivateRoute> } />
-      <Route
-  path="/git"
-  element={
-    <PrivateRoute isLogged={isLogged}>
-      <Navbar />
-      <Git darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Footer />
-    </PrivateRoute>
-  }
-/>
-      <Route path="*" element={<h1 className="error"> Page is not founded </h1>} />
+      <Route path="/home" element={<PrivateRoute isLogged={isLogged}> <Navbar /> <Home darkMode={darkMode} setDarkMode={setDarkMode} /> <Footer/> </PrivateRoute>} />
+      <Route path="/html" element={<PrivateRoute isLogged={isLogged}> <Navbar /> <HTML darkMode={darkMode} setDarkMode={setDarkMode} /> <Footer/> </PrivateRoute>} />
+      <Route path="/css" element={<PrivateRoute isLogged={isLogged}> <Navbar /> <CSS darkMode={darkMode} setDarkMode={setDarkMode} /> <Footer/> </PrivateRoute>} />
+      <Route path="/links" element={<PrivateRoute isLogged={isLogged}> <Navbar /> <Links darkMode={darkMode} setDarkMode={setDarkMode} /> <Footer/> </PrivateRoute>} />
+      <Route path="/shorts" element={<PrivateRoute isLogged={isLogged}> <Navbar /> <Shorts darkMode={darkMode} setDarkMode={setDarkMode} /> <Footer/> </PrivateRoute>} />
+      <Route path="/npm" element={<PrivateRoute isLogged={isLogged}> <Navbar /> <NPM darkMode={darkMode} setDarkMode={setDarkMode} /> <Footer /> </PrivateRoute>} />
+      <Route path="/git" element={<PrivateRoute isLogged={isLogged}> <Navbar /> <Git darkMode={darkMode} setDarkMode={setDarkMode} /> <Footer /> </PrivateRoute>} />
+      <Route path="*" element={<h1 className="error"> Page is not found </h1>} />
     </Routes>
   );
 };

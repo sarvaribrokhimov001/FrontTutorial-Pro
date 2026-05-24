@@ -171,136 +171,136 @@ const NPM = ({ darkMode, setDarkMode }) => {
     },
 
     {
-  name: "React Hook Form",
-  command: "npm i react-hook-form",
-  description: "Performance yaxshi bo‘lgan form management kutubxonasi."
-},
+      name: "React Hook Form",
+      command: "npm i react-hook-form",
+      description: "Performance yaxshi bo‘lgan form management kutubxonasi."
+    },
 
-{
-  name: "TanStack Query",
-  command: "npm i @tanstack/react-query",
-  description: "API caching va server state management uchun."
-},
+    {
+      name: "TanStack Query",
+      command: "npm i @tanstack/react-query",
+      description: "API caching va server state management uchun."
+    },
 
-{
-  name: "React Helmet",
-  command: "npm i react-helmet",
-  description: "Document title va meta taglarni boshqarish."
-},
+    {
+      name: "React Helmet",
+      command: "npm i react-helmet",
+      description: "Document title va meta taglarni boshqarish."
+    },
 
-{
-  name: "Day JS",
-  command: "npm i dayjs",
-  description: "Date va time bilan ishlash uchun yengil kutubxona."
-},
+    {
+      name: "Day JS",
+      command: "npm i dayjs",
+      description: "Date va time bilan ishlash uchun yengil kutubxona."
+    },
 
-{
-  name: "Moment JS",
-  command: "npm i moment",
-  description: "Sana va vaqt formatlash uchun."
-},
+    {
+      name: "Moment JS",
+      command: "npm i moment",
+      description: "Sana va vaqt formatlash uchun."
+    },
 
-{
-  name: "clsx",
-  command: "npm i clsx",
-  description: "Conditional className yozishni osonlashtiradi."
-},
+    {
+      name: "clsx",
+      command: "npm i clsx",
+      description: "Conditional className yozishni osonlashtiradi."
+    },
 
-{
-  name: "Sass",
-  command: "npm i sass",
-  description: "SCSS/SASS ishlatish uchun."
-},
+    {
+      name: "Sass",
+      command: "npm i sass",
+      description: "SCSS/SASS ishlatish uchun."
+    },
 
-{
-  name: "React Spinners",
-  command: "npm i react-spinners",
-  description: "Loading spinner componentlari."
-},
+    {
+      name: "React Spinners",
+      command: "npm i react-spinners",
+      description: "Loading spinner componentlari."
+    },
 
-{
-  name: "Lottie React",
-  command: "npm i lottie-react",
-  description: "JSON animatsiyalar ishlatish uchun."
-},
+    {
+      name: "Lottie React",
+      command: "npm i lottie-react",
+      description: "JSON animatsiyalar ishlatish uchun."
+    },
 
-{
-  name: "Firebase",
-  command: "npm i firebase",
-  description: "Authentication, database va hosting xizmatlari."
-},
+    {
+      name: "Firebase",
+      command: "npm i firebase",
+      description: "Authentication, database va hosting xizmatlari."
+    },
 
-{
-  name: "Socket IO Client",
-  command: "npm i socket.io-client",
-  description: "Realtime chat va websocket ulanishlari uchun."
-},
+    {
+      name: "Socket IO Client",
+      command: "npm i socket.io-client",
+      description: "Realtime chat va websocket ulanishlari uchun."
+    },
 
-{
-  name: "EmailJS",
-  command: "npm i @emailjs/browser",
-  description: "Frontend orqali email yuborish."
-},
+    {
+      name: "EmailJS",
+      command: "npm i @emailjs/browser",
+      description: "Frontend orqali email yuborish."
+    },
 
-{
-  name: "AOS",
-  command: "npm i aos",
-  description: "Scroll animationlar uchun."
-},
+    {
+      name: "AOS",
+      command: "npm i aos",
+      description: "Scroll animationlar uchun."
+    },
 
-{
-  name: "React CountUp",
-  command: "npm i react-countup",
-  description: "Animated counter yaratish."
-},
+    {
+      name: "React CountUp",
+      command: "npm i react-countup",
+      description: "Animated counter yaratish."
+    },
 
-{
-  name: "GSAP",
-  command: "npm i gsap",
-  description: "Professional animation kutubxonasi."
-},
+    {
+      name: "GSAP",
+      command: "npm i gsap",
+      description: "Professional animation kutubxonasi."
+    },
 
-{
-  name: "Three JS",
-  command: "npm i three",
-  description: "3D graphics va web animationlar."
-},
+    {
+      name: "Three JS",
+      command: "npm i three",
+      description: "3D graphics va web animationlar."
+    },
 
-{
-  name: "React Player",
-  command: "npm i react-player",
-  description: "Video va media player component."
-},
+    {
+      name: "React Player",
+      command: "npm i react-player",
+      description: "Video va media player component."
+    },
 
-{
-  name: "Markdown Preview",
-  command: "npm i react-markdown",
-  description: "Markdown render qilish."
-},
+    {
+      name: "Markdown Preview",
+      command: "npm i react-markdown",
+      description: "Markdown render qilish."
+    },
 
-{
-  name: "Prism JS",
-  command: "npm i prismjs",
-  description: "Code syntax highlighting."
-},
+    {
+      name: "Prism JS",
+      command: "npm i prismjs",
+      description: "Code syntax highlighting."
+    },
 
-{
-  name: "React Syntax Highlighter",
-  command: "npm i react-syntax-highlighter",
-  description: "Kodlarni chiroyli ko‘rsatish."
-},
+    {
+      name: "React Syntax Highlighter",
+      command: "npm i react-syntax-highlighter",
+      description: "Kodlarni chiroyli ko‘rsatish."
+    },
 
-{
-  name: "i18next",
-  command: "npm i react-i18next i18next",
-  description: "Multi language (translation) qo‘shish."
-},
+    {
+      name: "i18next",
+      command: "npm i react-i18next i18next",
+      description: "Multi language (translation) qo‘shish."
+    },
 
-{
-  name: "Zod",
-  command: "npm i zod",
-  description: "Type-safe validation library."
-}
+    {
+      name: "Zod",
+      command: "npm i zod",
+      description: "Type-safe validation library."
+    }
   ];
 
   const filteredNPM = npmList.filter(item =>
@@ -326,59 +326,33 @@ const NPM = ({ darkMode, setDarkMode }) => {
 
   return (
     <div>
-      <h1 className="NPM__title HTML__title">
-        Useful NPM Packages
-      </h1>
+      <h1 className="NPM__title HTML__title"> Useful NPM Packages </h1>
+      <div className="search__wrapper">
+        <input
+         className="NPM__input HTML__input"
+         type="search"
+         placeholder="Search npm package"
+         value={search}
+         onChange={(e) => setSearch(e.target.value)} />
 
-   <div className="search__wrapper">
-       <input
-        className="NPM__input HTML__input"
-        type="search"
-        placeholder="Search npm package"
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      />
-
-               <ThemeToggle
-    darkMode={darkMode}
-    setDarkMode={setDarkMode}
-  />
+        <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
    </div>
 
       <div className="NPM__container">
         {filteredNPM.length > 0 ? (
           filteredNPM.map((item, index) => (
             <div className="NPM__card" key={index}>
-
-              <h2 className="NPM__name">
-                {item.name}
-              </h2>
-
-              <p className="NPM__description">
-                {item.description}
-              </p>
+              <h2 className="NPM__name"> {item.name} </h2>
+              <p className="NPM__description"> {item.description} </p>
 
               <div className="NPM__commandBox">
-
-                <code className="NPM__command">
-                  {item.command}
-                </code>
-
-                <button
-                  className="NPM__copyBtn"
-                  onClick={() => copyToClipboard(item.command)}
-                >
-                  Copy
-                </button>
-
+                <code className="NPM__command"> {item.command} </code>
+                <button className="NPM__copyBtn" onClick={() => copyToClipboard(item.command)}> Copy </button>
               </div>
-
             </div>
           ))
         ) : (
-          <p className="tags__not__founded">
-            Package is not found ❌
-          </p>
+          <p className="tags__not__founded"> Package is not found ❌ </p>
         )}
       </div>
     </div>

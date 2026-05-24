@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import '../styles/Home.css';
-// import Footer from '../components/Footer';
 import { Link } from "react-router-dom";
 import ThemeToggle from '../components/ThemeToggle';
 
@@ -17,13 +16,14 @@ const Home = ({ darkMode, setDarkMode }) => {
       <header>
         <h1 className='home__title'> Welcome to our Website </h1>
         <div className="search__wrapper">
-          <input className='home__input' type="search" placeholder='Write your choosing section' value={search}
-          onChange={(e) => setSearch(e.target.value)} />
+          <input 
+           className='home__input' 
+           type="search" 
+           placeholder='Write your choosing section' 
+           value={search}
+           onChange={(e) => setSearch(e.target.value)} />
 
-          <ThemeToggle
-    darkMode={darkMode}
-    setDarkMode={setDarkMode}
-  />
+          <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
         </div>
 
         <div className='home__description__container'>
@@ -35,7 +35,6 @@ const Home = ({ darkMode, setDarkMode }) => {
               <h4 className='home__sections__title'> Sections </h4>
 
               <div className='home__section'>
-
                 {checkMatch("LOGIN") && (
                   <li><Link className='home__section__link' to="/app"> LOGIN </Link></li>
                 )}
@@ -65,13 +64,8 @@ const Home = ({ darkMode, setDarkMode }) => {
                 )}
 
                 {checkMatch("GIT") && (
-  <li>
-    <Link className='home__section__link' to="/git">
-      GIT
-    </Link>
-  </li>
-)}
-
+                  <li> <Link className='home__section__link' to="/git"> GIT </Link> </li>
+                )}
               </div>
             </div>
           )}

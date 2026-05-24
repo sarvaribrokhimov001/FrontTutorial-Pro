@@ -55,7 +55,6 @@
 }
 
 @media (max-width: 500px) {
-
   .NPM__title {
     font-size: 24px;
     text-align: center;
@@ -104,5 +103,4 @@
     height: 38px;
     font-size: 13px;
   }
-
 }

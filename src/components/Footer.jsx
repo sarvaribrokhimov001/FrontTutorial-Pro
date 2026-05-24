@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/Footer.css';
 import { Link } from "react-router-dom";
 
@@ -17,9 +16,8 @@ const Footer = () => {
             <li> <Link className="navbar__link" to="/npm"> NPM </Link> </li>
             <li> <Link className="navbar__link" to="/git"> Git </Link> </li>
         </ul>
-
+        
         <p className="footer__copy"> © 2026 FrontTutorial | Built with React </p>
-
       </div>
     </footer>
   )}

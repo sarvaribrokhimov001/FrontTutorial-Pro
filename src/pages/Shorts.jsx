@@ -137,13 +137,14 @@ const Shorts = ({ darkMode, setDarkMode }) => {
     <div>
       <h1 className='Shorts__title HTML__title'> Frontend Shortcuts & Terms </h1>
       <div className="search__wrapper">
-        <input className='Shorts__input HTML__input' type="search" placeholder='Search abbreviation or full form' value={search}
-        onChange={(e) => setSearch(e.target.value)} />
+        <input 
+         className='Shorts__input HTML__input' 
+         type="search" 
+         placeholder='Search abbreviation or full form' 
+         value={search}
+         onChange={(e) => setSearch(e.target.value)} />
 
-         <ThemeToggle
-    darkMode={darkMode}
-    setDarkMode={setDarkMode}
-  />
+        <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
       </div>
 
       <div className='All__shorts'>

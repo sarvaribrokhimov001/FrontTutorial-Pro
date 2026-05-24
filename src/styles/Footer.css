@@ -46,7 +46,6 @@ body.light .footer {
 }
 
 @media (max-width: 500px) {
-
   .footer {
     padding: 20px 10px;
   }
@@ -67,5 +66,4 @@ body.light .footer {
   .footer__copy {
     font-size: 12px;
   }
-
 }

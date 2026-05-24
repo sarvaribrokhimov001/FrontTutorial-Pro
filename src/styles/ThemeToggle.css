@@ -2,7 +2,6 @@
     padding: 12px 18px;
     border: none;
     border-radius: 12px;
-    cursor: pointer;
     font-size: 16px;
     font-weight: bold;
     background-color: black;
@@ -15,10 +14,8 @@
 }
 
 @media (max-width: 500px) {
-
   .theme__btn {
     padding: 10px;
     font-size: 14px;
   }
-
 }
