@@ -2,22 +2,3 @@
     width: 1100px;
 }
 
-@media (max-width: 500px) {
-
-  .CSS__title {
-    font-size: 24px;
-    text-align: center;
-  }
-
-  .CSS__properties {
-    padding: 10px;
-  }
-
-  .property {
-    font-size: 13px;
-    padding: 10px;
-    line-height: 1.5;
-    word-break: break-word;
-  }
-
-}

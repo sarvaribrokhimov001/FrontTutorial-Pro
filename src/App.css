@@ -202,3 +202,271 @@ pre {
 }
 
 }
+
+
+
+/* =========================
+   HOME PAGE RESPONSIVE
+========================= */
+
+@media (max-width: 500px) {
+
+  header {
+    width: 100%;
+    overflow-x: hidden;
+    padding: 15px 10px;
+  }
+
+  .home__title {
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 18px;
+  }
+
+  .search__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .home__input {
+    width: 100%;
+    max-width: 100%;
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .home__description__container {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 5px;
+  }
+
+  .home__description__title {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .home__description {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+
+  .home__sections {
+    margin-top: 25px;
+    width: 100%;
+  }
+
+  .home__sections__title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .home__section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .home__section li {
+    width: 100%;
+    list-style: none;
+  }
+
+  .home__section__link {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+
+}
+
+
+/* =========================
+   HTML PAGE RESPONSIVE
+========================= */
+
+@media (max-width: 500px) {
+
+  .HTML__title {
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  .search__wrapper {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .HTML__input {
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .HTML__tags {
+    width: 100%;
+    padding: 10px 8px;
+    overflow-x: hidden;
+  }
+
+  .tags {
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.7;
+    padding: 12px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    border-radius: 10px;
+    margin-bottom: 12px;
+  }
+
+  .tags__not__founded {
+    text-align: center;
+    font-size: 15px;
+  }
+
+}
+
+
+/* =========================
+   CSS PAGE RESPONSIVE
+========================= */
+
+@media (max-width: 500px) {
+
+  .CSS__title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .CSS__input {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .CSS__properties {
+    width: 100%;
+    padding: 10px 8px;
+    overflow-x: hidden;
+  }
+
+  .property {
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.7;
+    padding: 12px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    border-radius: 10px;
+    margin-bottom: 12px;
+  }
+
+}
+
+
+/* =========================
+   SHORTS PAGE RESPONSIVE
+========================= */
+
+@media (max-width: 500px) {
+
+  .Shorts__title {
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  .Shorts__input {
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .All__shorts {
+    width: 100%;
+    padding: 10px 8px;
+    overflow-x: hidden;
+  }
+
+  .All__shorts ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .shorts__item {
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.7;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    list-style: none;
+  }
+
+  .shorts__item strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+
+  .shorts__notfound {
+    text-align: center;
+    font-size: 15px;
+  }
+
+}
+
+
+/* =========================
+   GLOBAL X SCROLL FIX
+========================= */
+
+@media (max-width: 500px) {
+
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  body,
+  html,
+  #root {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
